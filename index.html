@@ -1,0 +1,255 @@
+
+
+
+<DOCTYPE html>
+  <html>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <div class="logo">
+    <img src="logo.png" width="200px">
+  </div>
+  <nav>
+  <ul id="MenuItems">
+    <li><a href="">Home</a></li>
+    <li <link ><a href="">Farm animals</a></li>
+    <li><a href="">Pets</a></li>
+    <li><a href="">Patners</a></li>
+    <li><a href="">useful links</a></li>
+</ul>
+</nav>
+  <div class="container">
+<div class="navbar">
+  
+
+<img src="menu.png" class="menu-icon" onclick="menutoggle( )" width="30px" height="30px">
+</div>
+</div>
+     
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">JukaneHub Survey Form</h1>
+    <p id="description" class="description">
+      Thank you for taking your time to help us know about your love for animals
+    </p>
+  </header>
+
+<div class="col-3">
+     <img src="Animal love.jpg">
+    <!--<img src="dog love.jpg"> -->
+  </div>
+
+  <form id="survey-form">
+    <div class="form-group">
+      <form action="conn.php" method="post">
+      <label id="Animal-label" for="name">Do you have any animal(s) in your homestead?</label>
+     <input
+          name="Animalownership"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+          required
+        />Yes</label
+      >
+      <label>
+        <input
+          name="Animalownership"
+          value="No"
+          type="radio"
+          class="input-radio"
+          required
+        />No</label
+      >
+    </div>
+    <div class="form-group">
+      <label id="Animal species-label" for="email">If yes, which animal is it?</label>
+      <input
+        type="text"
+        name="Species"
+        id="Species"
+        class="form-control"
+        placeholder="Enter the animal species eg Dog, Cow ..."
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >How many Animals do you own<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="Animalsnumber"
+        id="number"
+        min="1"
+        max="10000"
+        class="form-control"
+        placeholder="Animalsnumber"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which feeds do you give to your animal(s)?</p>
+      <select id="dropdown" name="feeds" class="form-control" required>
+        <option disabled selected value>Select feeds</option>
+        <option value="Concentrates">Concentrates</option>
+        <option value="Cereals">Cereals</option>
+        <option value="Pasture">Pasture</option>
+        <option value="Hay">Hay</option>
+        <option value="Leftovers">Leftovers</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Are you interested in pets in specific?</p>
+      <label>
+        <input
+          name="petkeepingrecommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="petkeepingrecommend"
+          value="No"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="petkeepingrecommend"
+          value="Can't tell"
+          type="radio"
+          class="input-radio"
+        />Can't tell</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite Pet ?
+      </p>
+      <select id="most-like" name="favoritepet" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Fish">Fish</option>
+      </select>
+    </div>
+ <div class="form-group">
+      <p>How often do you deworm your animal(s)?</p>
+      <select id="dropdown" name="deworming" class="form-control" required>
+        <option disabled selected value>Select schedule</option>
+        <option value="3-months">After 3 months</option>
+        <option value="1-year">1-year</option>
+        <option value="When advised">When advised by a Vet</option>
+        <option value="Am not-sure">Am not-sure</option>
+        
+      </select>
+    </div>
+    <div class="form-group">
+
+      <p>
+        Why do you keep Animals?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="Reason"
+          value="Agribusiness"
+          type="checkbox"
+          class="input-checkbox"
+        />Agribusiness</label
+      >
+      <label>
+        <input
+          name="Reason"
+          value="Companion"
+          type="checkbox"
+          class="input-checkbox"
+        />Companionship</label
+      >
+      <label
+        ><input
+          name="Reason"
+          value="Prefer not to say"
+          type="checkbox"
+          class="input-checkbox"
+        />Prefer not to say</label
+      >
+      
+    </div>
+
+<div class="form-group">
+      <label id="survey report" for="email">Were the survey questions friendly?</label>
+      <input
+        type="text"
+        name="report"
+        id="report"
+        class="form-control"
+        placeholder="Enter your opinion here..."
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button" name="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<!----footer--->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      
+            <div class="footer-col-1">
+        <img src="logo.png">
+        <p>Don't pray things to be easier for you, pray that you become better.</p>
+      </div>
+      
+          </div>
+    <hr>
+    <p class="copyright">Copyright 2023 - Edwin Karanja</p>
+  </div>
+  
+</div>
+<!--------js for toggle menu--------->
+
+<script>
+var MenuItems = document.getElementById("MenuItems");
+
+MenuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+  if (MenuItems.style.maxHeight == "0px") 
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+  else
+  {
+      MenuItems.style.maxHeight = "0px";
+    }
+}
+</script>
+
+</html>
+
+
